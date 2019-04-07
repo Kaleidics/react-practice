@@ -1,2 +1,2 @@
 # react-practice
-Practicing how react really works with a guessing game.
+This is a folder to hold my react practice.
