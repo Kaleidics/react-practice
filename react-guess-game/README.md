@@ -1,1 +1,1 @@
-#1-100 Number Guessing Game using React
+# 1-100 Number Guessing Game using React
