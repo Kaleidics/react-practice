@@ -14,9 +14,20 @@ export default class Game extends React.Component {
         }
     }
 
+    updateCurrentAnswer(guess) {
+        this.setState({
+            CurrentAnswer: guess
+        })
+    }
+
     render(){
         return(
-            <div><h2>The correct answer is {this.state.CorrectAnswer}</h2></div>
+
+            <div><h2>The correct answer is {this.state.CorrectAnswer}</h2>
+            <GuessInput onSubmit={guess => this.updateCurrentAnswer(guess)}/>
+            <h2>The current answwer is {this.state.CurrentAnswer}</h2>
+            </div>
+           
         )
        
     }
