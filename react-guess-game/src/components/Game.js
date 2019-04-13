@@ -19,7 +19,7 @@ export default class Game extends React.Component {
             CurrentAnswer: guess
         })
     }
-
+    
     render(){
         return(
 
