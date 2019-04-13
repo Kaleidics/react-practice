@@ -9,7 +9,7 @@ export default class GuessInput extends React.Component{
             event.preventDefault();
            
             const guess = this.numInput.value.trim();
-            alert(guess);
+            // alert(guess);
             if (guess && this.props.onSubmit) {
                 this.props.onSubmit(guess);
             }
