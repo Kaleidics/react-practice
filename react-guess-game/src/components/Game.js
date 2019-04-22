@@ -3,7 +3,6 @@ import React from 'react';
 
 import Feedback from './Feedback';
 import GuessInput from './GuessInput';
-import GuessHistory from './GuessHistory';
 
 export default class Game extends React.Component {
     constructor(props){
@@ -20,7 +19,10 @@ export default class Game extends React.Component {
             CurrentAnswer: parseInt(guess)
         }, () => {
                 if (this.state.CurrentAnswer === this.state.CorrectAnswer) {
-                    this.setState({ feedback: 'You got it right' })
+                    this.setState({ 
+                        feedback: 'You got it right',
+                        CorrectAnswer: Math.floor(Math.random() * Math.floor(100))
+                     })
                 }
 
                 else if (this.state.CurrentAnswer !== this.state.CorrectAnswer) {
